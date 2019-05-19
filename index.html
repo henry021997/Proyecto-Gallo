@@ -11,10 +11,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="./diseno.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <!-- todo lo que ve el usuario se coloca aca-->
+    <!--Barra para moviles-->
+    <nav class=" grey darken-3">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="./resources/logo.png" width="120" height="65"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#modalConocemos" class="modal-trigger">Conocenos</a></li>
+                <li><a href="./index.html">inicio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#modalConocemos" class="modal-trigger">Conocenos</a></li>
+        <li><a href="./index.html">inicio</a></li>
+    </ul>
+    <!-- todo lo que ve el usuario se coloca aca
     <div class="navbar-fixed">
         <nav class=" grey darken-3">
             <div class="nav-wrapper  grey darken-3">
@@ -26,7 +45,7 @@
             </div>
         </nav>
     </div>
-
+-->
     <div class="parallax-container">
         <div class="parallax"><img src="./resources/fondo2.jpg"></div>
     </div>
@@ -78,6 +97,8 @@
     </footer>
 
 
+
+
     <script>
         //Aca se coloca todo lo que requiera codigo JavaScript o Jquery
         document.addEventListener('DOMContentLoaded', function() {
@@ -89,6 +110,13 @@
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.modal');
             var instances = M.Modal.init(elems);
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
         });
     </script>
 </body>
