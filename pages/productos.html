@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../diseno.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body background="../resources/fondo productos.jpg">
+    <!--Barra para moviles-->
+    <nav class=" grey darken-3">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="../resources/logo.png" width="120" height="65"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#modalConocemos" class="modal-trigger">Conocenos</a></li>
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="../pages/productos.html">productos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#modalConocemos" class="modal-trigger">Conocenos</a></li>
+        <li><a href="./index.html">inicio</a></li>
+    </ul>
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../resources/producto 1.png" width="100x" height="600px">
+                    <span style="color:black" class="card-title colortexto">gallo original 12 oz</span>
+                </div>
+                <div class="card-content">
+                    <p>gallo original es la clasica cerveza guatemalteca</p>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../resources/producto 2" width="100x" height="600px">
+                    <span style="color:black" class="card-title colortexto">gallo light 12 oz</span>
+                </div>
+                <div class="card-content">
+                    <p>gallo light es una nueva mezcla de cerveza con un sabor mas suave</p>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../resources/producto 3.jpg" width="100x" height="600px">
+                    <span style="color:black" class="card-title colortexto">gallo 502</span>
+                </div>
+                <div class="card-content">
+                    <p>gallo 502 nueva cerveza con todo el sabor de guatemala con su sellado en frio</p>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modalConocemos" class="modal">
+        <div class="modal-content">
+            <h4>Cerveza Gallo</h4>
+            <p>Cerveza Gallo es una marca de cerveza producida por la Cervecería Centro Americana, S.A.. Es la cerveza más consumida en Guatemala. La Cervecería Centro Americana tuvo hasta 2003 una cuota de mercado cercana al 100% del mercado cervecero guatemalteco.
+                Desde entonces creció la cuota del único competidor relevante, la cerveza Brahva, producida por la cervecera brasileña Companhia de Bebidas Las Américas que forma parte del grupo belga-estadounidense AB InBev. En 2007 la cuota de Gallo
+                se mantuvo todavía en un 87%.1​ En 2004 fue la primera marca comercial de Guatemala en ser admitida en el Hall of fame por la institución Guatemalteca "Grandes Marcas de Guatemala".</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+
+</html>
