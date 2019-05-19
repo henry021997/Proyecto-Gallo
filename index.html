@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <!--Esto le coloca un nombre a la pestana-->
+    <title>Programando desde cero</title>
+    <!--En esta area se colocan los enlaces a utilizar (Fuentes o Frameworks y CSS)-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./diseno.css">
+</head>
+
+<body>
+    <!-- todo lo que ve el usuario se coloca aca-->
+    <div class="navbar-fixed">
+        <nav class=" grey darken-3">
+            <div class="nav-wrapper  grey darken-3">
+                <a href="#!" class="brand-logo"><img src="./resources/logo.png" alt="" width="120px" height="65"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#modalConocemos" class="modal-trigger">Conocenos</a></li>
+                    <li><a href="./index.html">inicio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="./resources/fondo2.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Gallo la mejor cerveza</h2>
+            <p class="grey-text text-darken-3 lighten-3">Prueba la mejor cerveza 100% guatemalteca y artesanal .</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="./resources//fondo1.jpg"></div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalConocemos" class="modal">
+        <div class="modal-content">
+            <h4>Cerveza Gallo</h4>
+            <p>Cerveza Gallo es una marca de cerveza producida por la Cervecería Centro Americana, S.A.. Es la cerveza más consumida en Guatemala. La Cervecería Centro Americana tuvo hasta 2003 una cuota de mercado cercana al 100% del mercado cervecero guatemalteco.
+                Desde entonces creció la cuota del único competidor relevante, la cerveza Brahva, producida por la cervecera brasileña Companhia de Bebidas Las Américas que forma parte del grupo belga-estadounidense AB InBev. En 2007 la cuota de Gallo
+                se mantuvo todavía en un 87%.1​ En 2004 fue la primera marca comercial de Guatemala en ser admitida en el Hall of fame por la institución Guatemalteca "Grandes Marcas de Guatemala".</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+        </div>
+    </div>
+
+    <footer class="page-footer  grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contactanos</h5>
+                    <p class="grey-text text-lighten-4">Telefono: 12345678.</p>
+                    <p class="grey-text text-lighten-4">cervezarica@gmail.com</p>
+                    <p class="grey-text text-lighten-4">zona 2 3-25</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Mapa</h5>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Henry David Derechos Reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        //Aca se coloca todo lo que requiera codigo JavaScript o Jquery
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+</body>
+
+</html>
